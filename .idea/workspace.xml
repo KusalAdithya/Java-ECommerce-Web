@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="WP2_ECom:war exploded" />
+      <artifact name="WP2_ECom:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6982454e-e192-4cdd-9fad-b8583046bd3f" name="Changes" comment="create index.jsp file">
+    <list default="true" id="6982454e-e192-4cdd-9fad-b8583046bd3f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,9 +52,12 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -67,7 +74,15 @@
   "keyToString": {
     "GlassFish Server.GlassFish 7.0.12.executor": "Run",
     "GlassFish Server.GlassFish 7.0.14.executor": "Run",
+    "Maven.WP2_ECom [clean,package,install].executor": "Run",
+    "Maven.WP2_ECom [clean].executor": "Run",
+    "Maven.WP2_ECom [install].executor": "Run",
+    "Maven.WP2_ECom [package].executor": "Run",
+    "Maven.ecom [clean].executor": "Run",
+    "Maven.ecom [install].executor": "Run",
+    "Maven.ecom [package].executor": "Run",
     "Payara Server.Payara 6.11.2.executor": "Run",
+    "Payara Server.Payara 6.21.0.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "development",
@@ -77,15 +92,32 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2678161",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\perer\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="49a0083b-8cd0-4144-8862-372f6a422370" reportId="WP2_ECom/qodana/2024-11-28" />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF\includes" />
+      <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp" />
+      <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF" />
+      <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF\layout" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="Payara 6.11.2" type="PayaraServerConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 6.11.2" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration name="Payara 6.21.0" type="PayaraServerConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 6.21.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="WP2_ECom:war exploded">
+        <artifact name="WP2_ECom:war">
           <settings />
         </artifact>
       </deployment>
@@ -149,22 +181,8 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="WP2_ECom:war exploded" />
+          <artifact name="WP2_ECom:war" />
         </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="PayaraServerConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN_NAME" value="domain1" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -185,7 +203,12 @@
       <option name="presentableId" value="Default" />
       <updated>1732722390038</updated>
       <workItem from="1732722391988" duration="2398000" />
-      <workItem from="1732803824607" duration="2117000" />
+      <workItem from="1732803824607" duration="9893000" />
+      <workItem from="1732813803089" duration="8675000" />
+      <workItem from="1732822533151" duration="1205000" />
+      <workItem from="1732824100620" duration="2030000" />
+      <workItem from="1732826153990" duration="101000" />
+      <workItem from="1732826306980" duration="3758000" />
     </task>
     <task id="LOCAL-00001" summary="structure">
       <option name="closed" value="true" />
@@ -211,15 +234,49 @@
       <option name="project" value="LOCAL" />
       <updated>1732724261594</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create index.jsp file">
+      <option name="closed" value="true" />
+      <created>1732806023475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732806023475</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create index.jsp file">
+      <option name="closed" value="true" />
+      <created>1732806234027</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732806234027</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="structure" />
     <MESSAGE value="create index.jsp file" />
     <option name="LAST_COMMIT_MESSAGE" value="create index.jsp file" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WP2_ECom$Payara_6_21_0.ic" NAME="Payara 6.21.0 Coverage Results" MODIFIED="1732823569624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

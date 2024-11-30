@@ -1,14 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
   User: perer
-  Date: 11/27/2024
-  Time: 4:56 PM
+  Date: 11/28/2024
+  Time: 9:53 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@page contentType="text/html; charset=UTF-8" %>
-<!doctype html>
-<html>
-
+<%@taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -33,20 +33,28 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<!--::header part start::-->
-<jsp:include page="WEB-INF/includes/header.jsp"/>
-<%--<!-- Header part end-->--%>
-
-<%--<layout:block name="contents">--%>
-<jsp:include page="home.jsp"/>
-<%--</layout:block>--%>
+<jsp:include page="../includes/header.jsp"/>
 
 
-<!--::footer_part start::-->
-<jsp:include page="WEB-INF/includes/footer.jsp"/>
-<!--::footer_part end::-->
+<h1>Head</h1>
+<div>
+    <layout:block name="header">
+        <%--    header--%>
+    </layout:block>
+</div>
+
+<h1>Contents</h1>
+<div>
+    <p>
+        <layout:block name="contents">
+    <h2>Contents will be placed under this h2</h2>
+    </layout:block>
+    </p>
+</div>
+
+
+<jsp:include page="../includes/header.jsp"/>
 
 <!-- jquery plugins here-->
 <script src="js/jquery-1.12.1.min.js"></script>
@@ -75,5 +83,4 @@
 <!-- custom js -->
 <script src="js/custom.js"></script>
 </body>
-
 </html>
