@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@page contentType="text/html; charset=UTF-8" %>
-<%@taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
+<%@taglib uri="http://com.waka.template/jsp-template" prefix="layout" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>aranoz</title>
+
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -34,27 +35,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <jsp:include page="../includes/header.jsp"/>
 
-
-<h1>Head</h1>
 <div>
     <layout:block name="header">
-        <%--    header--%>
+<%--      header--%>
     </layout:block>
 </div>
 
-<h1>Contents</h1>
 <div>
-    <p>
-        <layout:block name="contents">
-    <h2>Contents will be placed under this h2</h2>
+
+    <layout:block name="contents">
+<%--      contents--%>
     </layout:block>
-    </p>
+
 </div>
 
 
-<jsp:include page="../includes/header.jsp"/>
+<jsp:include page="../includes/footer.jsp"/>
 
 <!-- jquery plugins here-->
 <script src="js/jquery-1.12.1.min.js"></script>
