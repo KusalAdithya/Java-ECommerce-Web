@@ -9,16 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6982454e-e192-4cdd-9fad-b8583046bd3f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6982454e-e192-4cdd-9fad-b8583046bd3f" name="Changes" comment="error solved with upgraded template dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/base.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +96,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2678161&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -127,7 +120,7 @@
       <server-settings>
         <option name="DOMAIN" value="domain1" />
         <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="true" />
+        <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
         <option name="CREDENTIAL_ALIAS" value="8c1f7d4c-62b1-4278-b1f8-b630aca586c5" />
@@ -188,22 +181,8 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN" value="" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Payara 6.21.0" type="PayaraServerConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 6.21.0" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="WP2_ECom:war">
           <settings />
@@ -309,6 +288,12 @@
       <workItem from="1733173013812" duration="3801000" />
       <workItem from="1733219336362" duration="17385000" />
       <workItem from="1733312435534" duration="8706000" />
+      <workItem from="1733337245571" duration="343000" />
+      <workItem from="1733406070444" duration="6434000" />
+      <workItem from="1733492230495" duration="7171000" />
+      <workItem from="1733818170610" duration="2000" />
+      <workItem from="1734016461460" duration="2324000" />
+      <workItem from="1734099189099" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="structure">
       <option name="closed" value="true" />
@@ -358,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732964492714</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="error solved with upgraded template dependency">
+      <option name="closed" value="true" />
+      <created>1733337466196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733337466196</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +372,8 @@
     <MESSAGE value="structure" />
     <MESSAGE value="create index.jsp file" />
     <MESSAGE value="[2024-11-30 11:59:32,027] Artifact WP2_ECom:war: java.io.IOException: com.sun.enterprise.admin.remote.RemoteFailureException: Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/SimpleTagSupport. Please see server.log for more details.&#10;&#10;this error comming when statin with server" />
-    <option name="LAST_COMMIT_MESSAGE" value="[2024-11-30 11:59:32,027] Artifact WP2_ECom:war: java.io.IOException: com.sun.enterprise.admin.remote.RemoteFailureException: Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/SimpleTagSupport. Please see server.log for more details.&#10;&#10;this error comming when statin with server" />
+    <MESSAGE value="error solved with upgraded template dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="error solved with upgraded template dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
