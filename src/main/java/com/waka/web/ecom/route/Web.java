@@ -1,5 +1,6 @@
 package com.waka.web.ecom.route;
 
+import com.waka.web.ecom.controller.AccountController;
 import com.waka.web.ecom.controller.HomeController;
 import com.waka.web.ecom.controller.ProfileController;
 import com.waka.web.mvc.core.interfaces.BaseRouter;
@@ -11,5 +12,6 @@ public class Web implements BaseRouter {
         // Register your routes here
         RouterMap.get("/",new HomeController(), "index");
         RouterMap.get("/profile",new ProfileController(), "index");
+        RouterMap.get("/account",new AccountController(), "index");
     }
 }

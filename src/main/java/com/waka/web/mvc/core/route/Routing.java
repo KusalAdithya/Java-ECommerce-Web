@@ -39,7 +39,7 @@ public class Routing {
         } catch (NoSuchMethodException e) {
             Logger.getLogger("Routing").severe("Method not found");
         } catch (InvocationTargetException e) {
-            Logger.getLogger("Routing").severe("InvocationTargetException");
+            throw new RuntimeException(e);
         } catch (IllegalAccessException e) {
             Logger.getLogger("Routing").severe("IllegalAccessException");
         }

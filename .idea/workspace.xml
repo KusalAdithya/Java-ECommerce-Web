@@ -9,8 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6982454e-e192-4cdd-9fad-b8583046bd3f" name="Changes" comment="persistence xml created">
+    <list default="true" id="6982454e-e192-4cdd-9fad-b8583046bd3f" name="Changes" comment="apply mvc and routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/waka/web/ecom/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waka/web/ecom/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/waka/web/ecom/route/Web.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waka/web/ecom/route/Web.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/waka/web/ecom/util/MySQLConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/waka/web/mvc/core/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waka/web/mvc/core/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/waka/web/mvc/core/route/Routing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waka/web/mvc/core/route/Routing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/base.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/frontend/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/frontend/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/frontend/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/frontend/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/singleProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/frontend/singleProduct.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +100,7 @@
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;development&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/My Study Works/IntelliJ Projects/WP2_ECom/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ecomm v1.5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -107,11 +120,14 @@
       <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\java\com\waka\web\ecom" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF\views\frontend" />
       <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF\views" />
       <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF\includes" />
       <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp" />
       <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF" />
-      <recent name="E:\My Study Works\IntelliJ Projects\WP2_ECom\src\main\webapp\WEB-INF\layout" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.waka.web.ecom.util" />
     </key>
   </component>
   <component name="RunManager" selected="Payara Server.Payara 6.21.0">
@@ -300,7 +316,14 @@
       <workItem from="1734016461460" duration="2324000" />
       <workItem from="1734099189099" duration="594000" />
       <workItem from="1734697144877" duration="388000" />
-      <workItem from="1735222728947" duration="9346000" />
+      <workItem from="1735222728947" duration="9523000" />
+      <workItem from="1735244526760" duration="3986000" />
+      <workItem from="1735288498364" duration="6000" />
+      <workItem from="1735289701032" duration="857000" />
+      <workItem from="1735308702469" duration="1647000" />
+      <workItem from="1735310514467" duration="7535000" />
+      <workItem from="1735322381839" duration="8000" />
+      <workItem from="1735395862679" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="structure">
       <option name="closed" value="true" />
@@ -374,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734697499365</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="apply mvc and routing">
+      <option name="closed" value="true" />
+      <created>1735232346674</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735232346674</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +429,8 @@
     <MESSAGE value="error solved with upgraded template dependency" />
     <MESSAGE value="Entity Updates" />
     <MESSAGE value="persistence xml created" />
-    <option name="LAST_COMMIT_MESSAGE" value="persistence xml created" />
+    <MESSAGE value="apply mvc and routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="apply mvc and routing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

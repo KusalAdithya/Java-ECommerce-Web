@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@page contentType="text/html; charset=UTF-8" %>
 <%--
   Created by IntelliJ IDEA.
   User: perer
@@ -62,8 +64,26 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown_4"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    My Account
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+                                    <c:if test="${sessionScope.user == null}">
+                                        <a class="dropdown-item" href="account"> login</a>
+                                    </c:if>
+<%--                                    <c:if test="${session.user != null}">--%>
+<%--                                        <a class="dropdown-item" href="tracking.html">tracking</a>--%>
+<%--                                    </c:if>--%>
+
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
+
                     <div class="hearer_icon d-flex">
                         <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                         <a href=""><i class="ti-heart"></i></a>

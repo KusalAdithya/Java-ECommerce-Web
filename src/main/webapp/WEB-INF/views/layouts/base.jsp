@@ -7,6 +7,7 @@
 --%>
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@taglib uri="http://com.waka.template/jsp-template" prefix="layout" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
